@@ -1,0 +1,11 @@
+echo "enter any num"
+read n
+tot=0
+while [ $n -gt 0 ]
+do 
+a=`expr $n % 10`
+tot=`expr $tot \* 10`
+tot=`expr $tot + $a`
+n=`expr $n / 10`
+done
+echo "total= $tot"

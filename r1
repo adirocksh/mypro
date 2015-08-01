@@ -1,0 +1,12 @@
+echo "Enter any number"
+read a
+echo "Enter any number"
+read b
+sum=`echo $a + $b |bc`
+echo "sum is: $sum"
+sbst=`echo $a - $b |bc`
+echo "substraction is: $sbst"
+mul=`echo $a \* $b |bc`
+echo "multiplication is:$mul"
+div=`echo $a % $b |bc`
+echo "division is:$div"
